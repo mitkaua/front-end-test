@@ -4,35 +4,46 @@
     <title>МеталПром</title>
     <meta charset="utf-8">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <!--<link href="css/ad.css" rel="stylesheet">-->
 </head>
-<body>
-<div class="navbar navbar-inverse">
+<body data-spy="scrool" data-target=".bs-doxs-sidedar">
+
+<div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
-        <a class="brand">Metal</a>
-        <p class="navbar-text"></p>
-        <ul class="nav pull-right">
-            <!--<li><p class="navbar-text">0567984788</p></li>-->
-            <ul class="nav">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-bullhorn"></i>
-                        056-798-47-88
-                        <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#"><i class="icon-bullhorn"></i> 056-798-45-77</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <li class="divider-vertical"></li>
-            <li><a href="#"><i class="icon-question-sign"></i> О нас</a></li>
-            <li class="divider-vertical"></li>
-            <li><a href="#"><i class="icon-book"></i> Справочник</a></li>
-            <li class="divider-vertical"></li>
-            <li><a href="#"><i class="icon-user"></i> Контакты</a></li>
-        </ul>
+        <div class="container">
+            <button type="button" class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#" style="float: left;">MetalProm</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav pull-right">
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-bullhorn"></i>
+                            056-798-47-88
+                            <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="icon-bullhorn"></i> 056-798-45-77</a></li>
+                            </ul>
+                        </li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="#"><i class="icon-question-sign"></i> О нас</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="#"><i class="icon-book"></i> Справочник</a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a href="#"><i class="icon-user"></i> Контакты</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="row" style="margin: 0px 130px;">
+
+<div class="row">
     <div id="projCarousel" class="carousel slide">
         <ol class="carousel-indicators">
             <li class="active" data-target="#projCarousel" data-slide-to="0"></li>
@@ -66,111 +77,129 @@
 
 </div>
 
-<!--<div class="container">-->
-    <!--<div class="row">-->
-<div class="span3">
-    <div class="tabbable tabs-left">
-        <!--<h4 style="margin-left: 10px;">Продукция</h4>-->
-        <ul class="nav nav-tabs">
-            <li><a href="#">Центробежное литье</a></li>
-            <li class="btn-link"><a href="#">Биметалическое литье</a></li>
-            <li><a href="#">Фланцы нержавеющие</a></li>
-            <li class="dropdown-submenu">
-                <a href="#">Нихромы и фехрали</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Нихром</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Фехраль</a></li>
+
+<div class="container">
+    <div class="row">
+        <div class="span2 bs-docs-sidebar">
+            <ul class="nav nav-list bs-docs-sidenav">
+                <li>
+                    <a href="#">Центробежное литье<em class="icon-chevron-right"></em></a>
+                </li>
+                <li>
+                    <a href="#">Биметалическое литье<em class="icon-chevron-right"></em></a>
+                </li>
+                <li>
+                    <a href="#">Фланцы нержавеющие<i class="icon-chevron-right"></i></a>
+                </li>
+                <li class="dropdown-submenu" role="menu" aria-labelledby="dLabel">
+                    <a href="#">Нихромы и фехрали<i class="icon-chevron-right"></i></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">Нихром<i class="icon-chevron-right"></i></a>
+                        </li>
+                        <li><a href="#">Фехраль<i class="icon-chevron-right"></i></a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu" role="menu" aria-labelledby="dLabel">
+                    <a href="#">Термопарная проволока<i class="icon-chevron-right"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Алюмель<i class="icon-chevron-right"></i></a></li>
+                        <li><a href="#">Хромель<i class="icon-chevron-right"></i></a></li>
+                        <li><a href="#">Капель<i class="icon-chevron-right"></i></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Закупаем<i class="icon-chevron-right"></i></a>
+                </li>
+                <li>
+                    <a href="#">Задать вопрос<i class="icon-chevron-right"></i></a>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+        <div class="span7" style="padding-left: 25px;">
+            <section itemprop="articleBody" id="typography">
+            <p>Уважаемые гости сайта, Вы посетили официальный сайт Научно-производственного предприятия «Металпром».
+                Направление деятельности ООО «НПП «Металпром»:
+            <ul>
+                <li>Центробежное литье (медь, бронза, латунь, нержавеющие, жаропрочные и специальные стали)</li>
+                <li>Биметаллическое литье (сталь – бронза, сталь – нержавейка, сталь-чугун, сталь-баббит)</ul>
+            </ul>
+
+            Способ производства:
+                <ul>
+            <li>Центробежное литье в кокиль</li>
                 </ul>
-            </li>
-            <li class="dropdown-submenu">
-                <a href="#">Термопарная проволока</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Алюмель</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Хромель</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Карель</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Закупаем</a></li>
-            <li><a href="#">Задать вопрос</a></li>
-        </ul>
+
+            Продукция: Втулки, кольца, вкладыши, гайки, шестерни, корпуса подшипников, фланцы, червячные колеса и др. отливки имеющие форму тел вращения.
+
+            Мы производим:
+            <ul>
+                <li>Запчасти к экскаваторам ( ЭКГ-5, ЭКГ-8, ЭКГ-12,5, ЭШ 6/45, ЭШ 10/70, Э-2503): втулки, вкладыши, валы, кольца и шайбы.</li>
+                <li>Втулки и другие запасные части для грузовых автомобилей МАЗ, КрАЗ, БелАЗ, КамАЗ, МАН</li>
+                <li>Комплектующие к дробилкам (СМД 111, СМД 118, СМД 120, СМ 561, КСД 1200, КСД-КМД 1750, 2200): втулки конические, втулки цилиндрческие, вкладыши, диски.</li>
+            </ul>
+
+            <p>Ассортимент производимой продукции очень велик и применяется во всех отраслях.
+            Отливки производятся методом центробежного литья, что обеспечивает высокую плотность и механические свойства отливок без неметаллических включений и раковин.
+                </p>
+
+            <p>Наше предприятие производит предварительную и полную механическую обработку деталей.</p>
+
+            <p>Мы постоянно усовершенствуем наше производство, что дает нам преимущество над нашими конкурентами как в качестве продукции так и в цене.</p>
+
+            <p>
+            С уважением,
+            Дирекция ООО «НПП «Металпром»</p>
+            </section>
+        </div>
+
+
+
+
+        <div class="span2">
+            <ul class="thumbnails">
+                <li class="row">
+                    <div class="span2">
+
+                        <a href="#" class="thumbnail"><img src="img/sale.jpg"></a>
+                    </div>
+                    <div class="span2">
+                        <a href="#"><strong>удобная форма оплати</strong></a>
+                        <p><small>любая форма расчетов, электронный документооборот</small></p>
+                    </div>
+                </li>
+                <li class="row">
+                    <div class="span2">
+                        <a href="#" class="thumbnail"><img src="img/pig.jpg"></a>
+                    </div>
+                    <div class="span3">
+                        <a href="#"><strong>качественная продукция</strong></a>
+                        <p><small>полное соблюдение международных стандартов, контроль качества</small></p>
+                    </div>
+                </li>
+                <li class="row">
+                    <div class="span2">
+                        <a href="#" class="thumbnail"><img src="img/transport.jpg"></a>
+                    </div>
+                    <div class="span3">
+                        <a href="#"><strong>служба доставки</strong></a>
+                        <p><small>полный спект транспортных усгуг</small></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
     </div>
 </div>
 
 
-
-<div class="span8">
-            <p>Уважаемые гости сайта, Вы посетили официальный сайт Научно-производственного предприятия «Металпром».
-                Направление деятельности ООО «НПП «Металпром»:
-                <ul>
-                    <li>Центробежное литье (медь, бронза, латунь, нержавеющие, жаропрочные и специальные стали)</li>
-                    <li>Биметаллическое литье (сталь – бронза, сталь – нержавейка, сталь-чугун, сталь-баббит)</ul>
-                </ul>
-
-                Способ производства:
-                • Центробежное литье в кокиль
-
-                Продукция: Втулки, кольца, вкладыши, гайки, шестерни, корпуса подшипников, фланцы, червячные колеса и др. отливки имеющие форму тел вращения.
-
-                Мы производим:
-                <ul>
-                    <li>Запчасти к экскаваторам ( ЭКГ-5, ЭКГ-8, ЭКГ-12,5, ЭШ 6/45, ЭШ 10/70, Э-2503): втулки, вкладыши, валы, кольца и шайбы.</li>
-                    <li>Втулки и другие запасные части для грузовых автомобилей МАЗ, КрАЗ, БелАЗ, КамАЗ, МАН</li>
-                    <li>Комплектующие к дробилкам (СМД 111, СМД 118, СМД 120, СМ 561, КСД 1200, КСД-КМД 1750, 2200): втулки конические, втулки цилиндрческие, вкладыши, диски.</li>
-                </ul>
-
-                Ассортимент производимой продукции очень велик и применяется во всех отраслях.
-                Отливки производятся методом центробежного литья, что обеспечивает высокую плотность и механические свойства отливок без неметаллических включений и раковин.
-
-                Наше предприятие производит предварительную и полную механическую обработку деталей.
-
-                Мы постоянно усовершенствуем наше производство, что дает нам преимущество над нашими конкурентами как в качестве продукции так и в цене.
-
-
-                С уважением,
-                Дирекция ООО «НПП «Металпром»</p>
-        </div>
-
-
-<div class="span6" style="width: 450px;">
-    <ul class="thumbnails">
-        <li class="row">
-            <div class="span2">
-                <a href="#" class="thumbnail"><img src="img/sale.jpg"></a>
-            </div>
-            <div class="span3">
-                <a href="#"><strong>удобная форма оплати</strong></a>
-                <p><small>любая форма расчетов, электронный документооборот</small></p>
-            </div>
-        </li>
-        <li class="row">
-            <div class="span2">
-                <a href="#" class="thumbnail"><img src="img/pig.jpg"></a>
-            </div>
-            <div class="span3">
-                <a href="#"><strong>качественная продукция</strong></a>
-                <p><small>полное соблюдение международных стандартов, контроль качества</small></p>
-            </div>
-        </li>
-        <li class="row">
-            <div class="span2">
-                <a href="#" class="thumbnail"><img src="img/transport.jpg"></a>
-            </div>
-            <div class="span3">
-                <a href="#"><strong>служба доставки</strong></a>
-                <p><small>полный спект транспортных усгуг</small></p>
-            </div>
-        </li>
-    </ul>
-</div>
-    <!--</div>-->
-<!--</div>-->
-
-<footer class="footer pull-left" style="background-color:;">
-    <!--<div class="container">-->
-        <div class="row">
+<footer class="footer pull-left" style="background-color:#000000;">
+            <div class="row">
             <div class="span2">
                 <p>Информация:</p>
                 <ul class="unstyled">
@@ -219,12 +248,14 @@
                     <li><a href="#">капель</a></li>
                 </ul>
             </div>
+
             <div class="span2">
                 <p>Закупаем:</p>
                 <ul class="unstyled">
                     <li><a href="#">материалы</a></li>
                 </ul>
             </div>
+
         </div>
     <!--</div>-->
 </footer>
