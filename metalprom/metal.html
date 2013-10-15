@@ -43,7 +43,7 @@
 </div>
 
 
-<div class="row">
+<div class="container">
     <div id="projCarousel" class="carousel slide">
         <ol class="carousel-indicators">
             <li class="active" data-target="#projCarousel" data-slide-to="0"></li>
@@ -80,7 +80,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="span2 bs-docs-sidebar">
+        <div class="span3 bs-docs-sidebar">
             <ul class="nav nav-list bs-docs-sidenav">
                 <li>
                     <a href="#">Центробежное литье<em class="icon-chevron-right"></em></a>
@@ -121,7 +121,8 @@
 
 
 
-        <div class="span7" style="padding-left: 25px;">
+        <div class="span7"> <!--style="padding-left: 25px;"-->
+            <article itemscope itemtype="http://schema.org/Article/">
             <section itemprop="articleBody" id="typography">
             <p>Уважаемые гости сайта, Вы посетили официальный сайт Научно-производственного предприятия «Металпром».
                 Направление деятельности ООО «НПП «Металпром»:
@@ -156,16 +157,17 @@
             С уважением,
             Дирекция ООО «НПП «Металпром»</p>
             </section>
+            </article>
         </div>
 
 
 
 
         <div class="span2">
+            <section itemprop="articleBody">  <!--id="typography-->
             <ul class="thumbnails">
                 <li class="row">
                     <div class="span2">
-
                         <a href="#" class="thumbnail"><img src="img/sale.jpg"></a>
                     </div>
                     <div class="span2">
@@ -177,7 +179,7 @@
                     <div class="span2">
                         <a href="#" class="thumbnail"><img src="img/pig.jpg"></a>
                     </div>
-                    <div class="span3">
+                    <div class="span2">
                         <a href="#"><strong>качественная продукция</strong></a>
                         <p><small>полное соблюдение международных стандартов, контроль качества</small></p>
                     </div>
@@ -186,78 +188,84 @@
                     <div class="span2">
                         <a href="#" class="thumbnail"><img src="img/transport.jpg"></a>
                     </div>
-                    <div class="span3">
+                    <div class="span2">
                         <a href="#"><strong>служба доставки</strong></a>
                         <p><small>полный спект транспортных усгуг</small></p>
                     </div>
                 </li>
             </ul>
+            </section>
         </div>
 
     </div>
 </div>
 
 
-<footer class="footer pull-left" style="background-color:#000000;">
-            <div class="row">
-            <div class="span2">
-                <p>Информация:</p>
-                <ul class="unstyled">
-                    <li><a href="#">контакты</a></li>
-                    <li><a href="#">о нас</a></li>
-                    <li><a href="#">партнерам</a></li>
-                    <li><a href="#">справочник</a></li>
-                </ul>
-            </div>
-            <div class="span2">
-                <p>Центробежное литье:</p>
-                <ul class="unstyled">
-                    <li><a href="#">бронза</a></li>
-                    <li><a href="#">медь</a></li>
-                    <li><a href="#">латунь</a></li>
-                    <li><a href="#">спецстали</a> </li>
-                </ul>
-            </div>
-            <div class="span2">
-                <p>Биметаллическое литье:</p>
-                <ul class="unstyled">
-                    <li><a href="#">сталь - бронза</a></li>
-                    <li><a href="#">сталь - нержавейка</a></li>
-                    <li><a href="#">сталь - чугун</a></li>
-                    <li><a href="#">сталь - бабит</a></li>
-                </ul>
-            </div>
-            <div class="span2">
-                <p>Фланцы:</p>
-                <ul class="unstyled">
-                    <li><a href="#">нержавеющие</a></li>
-                </ul>
-            </div>
-            <div class="span2">
-                <p>Прецизионные сплавы:</p>
-                <ul class="unstyled">
-                    <li><a href="#">нихром</a></li>
-                    <li><a href="#">фехраль</a></li>
-                </ul>
-            </div>
-            <div class="span2">
-                <p>Термипарная проволока</p>
-                <ul class="unstyled">
-                    <li><a href="#">алюмель</a></li>
-                    <li><a href="#">хромель</a></li>
-                    <li><a href="#">капель</a></li>
-                </ul>
-            </div>
+<footer class="footer" style=" text-align: left;"> <!--background-image: url(img/footer_Background.jpg) ; -->
 
-            <div class="span2">
-                <p>Закупаем:</p>
-                <ul class="unstyled">
-                    <li><a href="#">материалы</a></li>
-                </ul>
-            </div>
-
+    <div class="container">
+    <div class="row">
+        <div class="span2">
+            <p>© 2011-2013 НПП "Металпром"</p>
+            <!--LiveInternet counter-->
+            <script type="text/javascript">
+        document.write("<a href='http://www.liveinternet.ru/click' "+
+                "target=_blank><img src='http://counter.yadro.ru/hit?t38.6;r"+
+                escape(document.referrer)+((typeof(screen)=="undefined")?"":
+                ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+                        screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+                ";"+Math.random()+
+                "' alt='' title='LiveInternet' "+
+                "border='0' width='31' height='31'><\/a>")
+        </script><!--/LiveInternet-->
         </div>
-    <!--</div>-->
+        <div class="span2">
+            <p>Информация:</p>
+            <ul class="unstyled">
+                <li><a href="#">контакты</a></li>
+                <li><a href="#">о нас</a></li>
+                <li><a href="#">партнерам</a></li>
+                <li><a href="#">справочник</a></li>
+                <li><a href="#">закупаем</a></li>
+            </ul>
+        </div>
+        <div class="span2">
+            <p>Центробежное литье:</p>
+            <ul class="unstyled">
+                <li><a href="#">бронза</a></li>
+                <li><a href="#">медь</a></li>
+                <li><a href="#">латунь</a></li>
+                <li><a href="#">спецстали</a></li>
+            </ul>
+        </div>
+        <div class="span2">
+            <p>Биметаллическое литье:</p>
+            <ul class="unstyled">
+                <li><a href="#">сталь - бронза</a></li>
+                <li><a href="#">сталь - нержавейка</a></li>
+                <li><a href="#">сталь - чугун</a></li>
+                <li><a href="#">сталь - бабит</a></li>
+                <li><a href="#">фланцы нержавеющие</a></li>
+            </ul>
+        </div>
+        <div class="span2">
+            <p>Прецизионные сплавы:</p>
+            <ul class="unstyled">
+                <li><a href="#">нихром</a></li>
+                <li><a href="#">фехраль</a></li>
+            </ul>
+        </div>
+        <div class="span2">
+            <p>Термипарная проволока</p>
+            <ul class="unstyled">
+                <li><a href="#">алюмель</a></li>
+                <li><a href="#">хромель</a></li>
+                <li><a href="#">капель</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
 </footer>
 
 
