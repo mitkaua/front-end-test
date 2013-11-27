@@ -1,0 +1,287 @@
+body{
+    font-family: Arial, sans-serif;
+    /*width: 940px;*/
+    /*border: 1px solid black;*/
+}
+#conteiner{
+    margin: auto;
+    width: 1200px;
+    background: url(../img/header.jpg) no-repeat;
+}
+#header{
+    /*background-color: #C0C0C0;*/
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+}
+
+#search{
+    background: url(../img/search.jpg) no-repeat;
+}
+#globe{
+    background: url(../img/globe.jpg) no-repeat;
+}
+#e-logo a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+#e-logo-img{
+    position: relative;
+    bottom: -15px;
+    /*background: url(../img/e-logo.jpg) no-repeat;*/
+}
+#e-logo,#e-logo-img,#magento-service,#my-account,#search,#globe{
+    display: inline-block;
+    /*text-align: center;*/
+}
+/*#magento-service .magento-menu,#my-account .my-assount-menu, #my-account #my-assount-menu-nth2 {*/
+#magento-service .magento-menu,#my-account ul li {
+    display: inline;
+}
+#magento-service{
+    border: 1px solid #C0C0C0;
+    padding: 3px 15px;
+    border-radius: 30px;
+    background-color: #808080;
+    /*color: white;
+    text-transform: uppercase;
+    font: normal small-caps 10px fantasy;*/
+}
+.magento-menu a{
+    margin: 0px 4px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+#my-account{
+    border: 1px solid #C0C0C0;
+    border-radius: 25px;
+    background-color: white;
+    padding: 2px 10px;
+}
+#my-account ul {
+    padding: 0px;
+    margin: 0px;
+}
+#my-account a {
+    color: #696969;
+    font-size: 12px;
+}
+/*
+.my-assount-menu, #my-assount-menu-nth2{
+    font-size: 12px;
+    padding: 0px 2px;
+}*//*
+#my-assount-menu-nth2{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}    */
+
+#home span {
+    border: 1px solid red;
+    background-color: #696969;
+    color: white;
+    font-size: 12px;
+    padding: 2px 20px;
+    /*float: left;*/
+    /*position: absolute;
+    left: 200px;*/
+    margin-top: 30px;
+}
+
+.goods a{
+    color: #696969;
+}
+.goods img{
+    float: left;
+    border: 1px solid black;
+    margin-right: 12px;
+}
+.goods form {
+    margin: 0px 10px 30px 0px;
+    /*margin: 0px 0px;*/
+}
+.goods h5 {
+    padding-bottom: 5px;
+}
+.goods-select{
+    /*float: right;*/
+    text-align: left;
+}
+.goods ul li {
+    display: inline;
+    font-size: 11px;
+    color: #808080;
+    border-bottom: 1px solid #808080;
+    margin-right: 5px;
+}
+.goods ul {
+    padding: 10px 0px;
+    margin: 0px;
+
+}
+
+/*.btn-plus{*/
+.goods ul li:first-child{
+    border: 1px solid black;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    background: #C0C0C0;
+   /* background: url(../img/plus.jpg) no-repeat;*/
+}
+.goods li:first-child a{
+    /*background: url(../img/plus.jpg) no-repeat;*/
+}
+
+
+.goods p, .goods span, .product-name p {
+    font-size: 12px;
+    margin: 0px;
+}
+.goods select {
+    width: 80px;
+    margin-left: 8px;
+}
+.goods input{
+    width: 35px;
+    margin-left: 11px;
+}
+.suggested-text {
+    font-size: 12px;
+    margin: 0px;
+}
+#home{
+    padding: 30px 0px;
+}
+#home, #left-list{
+    padding-left: 12%;
+}
+
+#left-list{
+    width: 25%;
+    float: left;
+}
+#right-list{
+    margin-right: 10%;
+    /*padding-left: 28%;*/
+    /*float: right;*/
+}
+.suggested-text {
+    padding: 5px 0px 15px 0px;
+    /*margin-top: 10px;*/
+}
+#suggested, #your-card {
+    margin: 15px 0px;
+    /*border-top: 1px solid #C0C0C0;*/
+    /*padding: 0px 0px;*/
+
+    /*border: 1px solid red;*/
+}
+#suggested {
+    border-top: 1px solid #808080;
+    margin-right: 15px;
+}
+#suggested+form{
+    border: 1px solid red;
+}
+table{
+    border-collapse: collapse;
+/*    margin-right: 13%;*/
+    /*width: 72%;*/
+}
+#your-card-menu ul li{
+    display: inline;
+    border: 1px solid red;
+}
+
+
+
+#your-card-table{}
+th {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 13px;
+    background: #C0C0C0;
+    color: #696969;
+}
+
+table td{
+    border-bottom: 1px solid #808080;
+}
+td{
+    vertical-align: top;
+    padding-top: 20px;
+}
+
+tr, .suggested-text{
+    /*padding-bottom: 20px;*/
+    /*border-top: 1px solid red;*/
+}
+.your-card-list h3, .your-card-list p{
+    /*border: 1px solid red;*/
+   /* display: inline;*/
+}
+.colorway {
+    width: 180px;
+}
+.product-name{
+    width: 35%;
+}
+
+.product-content {
+    padding-bottom: 15px;
+    color: #808080;
+}
+.product-name span{
+    font-weight: bold ;
+}
+.product-name p {
+    margin: 10px 0px;
+}
+
+.your-card-subtotal{
+    color: red;
+    width: 10%;
+    /*padding: 0px 30px 0px 0px;*/
+}
+.qty {
+    width: 35px;
+    margin-right: 10px;
+}
+.your-card-list p{
+   /* width: 30%;*/
+}
+.division {
+    /*border: 1px solid black;*/
+    background-color: #696969;
+    padding: 3px 5px;
+    /*margin-bottom: 20px;*/
+    color: white;
+    text-transform: uppercase;
+}
+span .division {
+    margin-bottom: 10px;
+}
+h4, h5 {
+    text-transform: uppercase;
+}
+h4 {
+    border-left: 5px solid red;
+    padding-left: 5px;
+    margin: 0px;
+}
+h5{
+    padding: 0px;
+    margin: 0px;
+}
+
+fieldset {
+    /*border: none;*/
+}
+a {
+    text-decoration: none;
+}
