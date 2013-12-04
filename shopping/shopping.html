@@ -85,16 +85,22 @@
         <span class="division">Delivery</span>
         <div id="delivery">
             <form>
-                <fieldset>
+
                     <p class="suggested-text">Enter your destination to get a shipping estimate</p>
-                    <p>State<select name="state">
+                    <!--<p>State<select name="state">
                         <option value="st1"></option>
                         <option value="st2"></option>
                         <option value="st3"></option>
                     </select></p>
-                    <p>Zip code<label><input type="text" name="zipcode"></label></p>
-                    <p><button type="submit">Get a quote</button></p>
-                </fieldset>
+                    <p>Zip code<label><input type="text" name="zipcode"></label></p>-->
+                    <p class="delivery-text">State<select name="states" class="delivery-select">
+                        <option value="s1"></option>
+                        <option value="s2"></option>
+                        <option value="s3"></option>
+                    </select></p>
+                    <label><span class="delivery-text">Zip code</span><input type="text" name="zip" class="delivery-field"></label>
+                    <p><button type="submit" class="btn">Get a quote</button></p>
+
             </form>
         </div>
     </div>
@@ -104,31 +110,7 @@
         <div id="your-card">
             <!--<p>Your Card</p>-->
             <div id="your-card-menu">
-                <!--
-                <ul>
-                    <li>Colorway</li>
-                    <li>Product name</li>
-                    <li>Price</li>
-                    <li>QTY</li>
-                    <li>Subtotal</li>
-                </ul>
-                <div class="your-card-list">
-                    <h3>Glasses and helmet</h3>
-                    <p>Plush finishing details, an amazing fir, and a feather light weight make the Sheer a great choice for women who want performance</p>
-                    <p>Color: Gloss White, Tech Dash White/Persimmon 57; Ambetion.</p>
-                    <p class="your-card-price">$169.00</p>
-                    <label><input type="text" name="qty"></label>
-                    <p class="your-card-subtotal">$169.00</p>
-                </div>
-                <div class="your-card-list">
-                    <h3>Helmet</h3>
-                    <p>Plush finishing details, an amazing fir, and a feather light weight make the Sheer a great choice for women who want performance</p>
-                    <p>Color: Gloss White, Tech Dash White/Persimmon 57; Ambetion.</p>
-                    <p class="your-card-price">$169.00</p>
-                    <label><input type="text" name="qty"></label>
-                    <p class="your-card-subtotal">$169.00</p>
-                </div>
-                -->
+
                 <table>
                     <tr id="your-card-table">
                         <th>Colorway</th>
@@ -163,8 +145,75 @@
                 </table>
             </div>
         </div>
+        <div id="discount">
+            <div id="discount-table">
+                <dl>
+                    <dt>Subtotal</dt>
+                    <dd>$500</dd>
+
+                    <dt>Tax</dt>
+                    <dd>$0</dd>
+
+                    <dt>Grand total</dt>
+                    <dd>$500</dd>
+                </dl>
+            </div>
+            <div class="apply">
+                <span class="division">Discount</span>
+                <p>Enter your coupon code if you have one.</p>
+                <label><input type="search" name="code"></label>
+                <button type="submit" class="btn">Apply code</button>
+            </div>
+            <div class="apply">
+                <span class="division">Gift cards</span>
+                <p>To apply a gift card balance to this order, enter the number below.</p>
+                <label><input type="search" name="card"></label>
+                <button type="submit" class="btn">Apply card</button>
+            </div>
+
+        </div>
+        <div id="btn-group">
+            <ul>
+                <li><a href="#">Continue shopping<img src="img/triangle-1.jpg" height="24" /></a></li>
+                <li><a href="#">Update shopping<img src="img/triangle-1.jpg" height="24" /></a></li>
+                <li><a href="#">Proceed to chekout<img src="img/triangle.jpg" height="24" /></a></li>
+            </ul>
+
+        </div>
+
+
+
     </div>
 
+
+
+
+</div>
+<div id="footer">
+    <dl>
+        <dt><b>Magento</b> services</dt>
+        <dd><a href="#">Custom development</a></dd>
+        <dd><a href="#">Version upgrade</a></dd>
+        <dd><a href="#">Magento theming</a></dd>
+        <dd><a href="#">Code reviews</a></dd>
+        <dd><a href="#">Server optimization</a></dd>
+    </dl>
+    <dl>
+        <dt><b>Magento</b> services</dt>
+        <dd><a href="#">Custom development</a></dd>
+        <dd><a href="#">Version upgrade</a></dd>
+        <dd><a href="#">Magento theming</a></dd>
+        <dd><a href="#">Code reviews</a></dd>
+        <dd><a href="#">Server optimization</a></dd>
+    </dl>
+    <dl>
+        <dt><b>Magento</b> services</dt>
+        <dd><a href="#">Custom development</a></dd>
+        <dd><a href="#">Version upgrade</a></dd>
+        <dd><a href="#">Magento theming</a></dd>
+        <dd><a href="#">Code reviews</a></dd>
+        <dd><a href="#">Server optimization</a></dd>
+    </dl>
 
 </div>
 </body>
