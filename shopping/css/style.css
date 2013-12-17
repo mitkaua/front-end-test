@@ -1,25 +1,27 @@
-body{
+html{
+    margin: auto;
+    background: url("../img/header.jpg") no-repeat;
+    width: 1200px;
+}
+body{    
     font-family: Arial, sans-serif;
-    /*width: 940px;*/
-    /*border: 1px solid black;*/
+    padding: 0;
+    margin: 0;
 }
 #conteiner{
-    margin: auto;
-    width: 1200px;
-    background: url(../img/header.jpg) no-repeat;
-    /*clear: both;*/
+    height: 100%;
+    display: block;
 }
 #header{
-    /*background-color: #C0C0C0;*/
     text-align: center;
     padding: 20px 20px 0px 20px;
 }
 
 #search{
-    background: url(../img/search.jpg) no-repeat;
+    /*background: url(../img/search.jpg) no-repeat;*/
 }
 #globe{
-    background: url(../img/globe.jpg) no-repeat;
+    /*background: url(../img/globe.jpg) no-repeat;*/
 }
 #e-logo a {
     text-decoration: none;
@@ -32,64 +34,72 @@ body{
 #e-logo-img{
     position: relative;
     bottom: -15px;
-    /*background: url(../img/e-logo.jpg) no-repeat;*/
 }
 #e-logo,#e-logo-img,#magento-service,#my-account,#search,#globe{
     display: inline-block;
-    /*text-align: center;*/
 }
-/*#magento-service .magento-menu,#my-account .my-assount-menu, #my-account #my-assount-menu-nth2 {*/
-#magento-service .magento-menu,#my-account ul li {
+#magento-service .magento-menu,#my-account .my-assount-menu, #my-account #my-assount-menu-nth2 {
     display: inline;
 }
 #magento-service{
     border: 1px solid #C0C0C0;
     padding: 3px 15px;
+    margin: 0px 15px;
     border-radius: 30px;
-    background-color: #808080;
-    /*color: white;
-    text-transform: uppercase;
-    font: normal small-caps 10px fantasy;*/
+    background: rgb(125,126,125); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(14,14,14,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+
 }
+
 .magento-menu a{
     margin: 0px 4px;
     color: white;
     text-transform: uppercase;
     font-size: 12px;
 }
+
 #my-account{
-    border: 1px solid #C0C0C0;
+    border: 1px solid #696969;
     border-radius: 25px;
     background-color: white;
-    padding: 2px 10px;
+    width: 270px;
+    height: 22px;
+    margin-top: 10px;
 }
-#my-account ul {
-    padding: 0px;
-    margin: 0px;
+#my-account .my-assount-menu, #my-assount-menu-nth2 {
+    padding: 2px 4px;
 }
+#my-account .my-assount-menu:hover {
+    /*border-radius: 25px;*/
+   /* background-color: red;*/
+}
+
 #my-account a {
     color: #696969;
-    font-size: 12px;
+    font-size: 11px;
 }
-/*
-.my-assount-menu, #my-assount-menu-nth2{
-    font-size: 12px;
-    padding: 0px 2px;
-}*//*
-#my-assount-menu-nth2{
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-}    */
+#my-account img{
+    padding: 0 5px;
+}
+#my-assount-menu-nth2 {
+    border-left: 1px solid #696969;
+    border-right: 1px solid #696969;
+}
+#my-assount-menu-nth2:hover{
+    /*background-color: red;*/
+}
 
 #home span {
-    border: 1px solid red;
     background-color: #696969;
     color: white;
     font-size: 12px;
-    padding: 2px 20px;
-    /*float: left;*/
-    /*position: absolute;
-    left: 200px;*/
+    padding: 4px 20px;
     margin-top: 30px;
 }
 
@@ -100,16 +110,21 @@ body{
     float: left;
     border: 1px solid black;
     margin-right: 12px;
+    clear: none;
+    height: 50px;
 }
 .goods form {
-    margin: 0px 10px 30px 0px;
-    /*margin: 0px 0px;*/
+    margin: 0px 10px 10px 0px;
+    border-top: 1px solid #A9A9A9;
+    padding-top: 10px;
+}
+.goods form:last-child {
+    padding: 15px 0px 30px 0px;
 }
 .goods h5 {
     padding-bottom: 5px;
 }
 .goods-select{
-    /*float: right;*/
     text-align: left;
 }
 .goods ul li {
@@ -131,9 +146,19 @@ body{
 .goods ul li:first-child{
     border: 1px solid black;
     text-transform: uppercase;
+    font-size: 10px;
     padding: 5px 5px 5px 15px;
     border-radius: 5px;
-    background-color: #C0C0C0;
+    /*background-color: #C0C0C0;*/
+    background: rgb(226,226,226); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(226,226,226,1) 0%, rgba(219,219,219,1) 68%, rgba(209,209,209,1) 100%, rgba(254,254,254,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(226,226,226,1)), color-stop(68%,rgba(219,219,219,1)), color-stop(100%,rgba(209,209,209,1)), color-stop(100%,rgba(254,254,254,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 68%,rgba(209,209,209,1) 100%,rgba(254,254,254,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 68%,rgba(209,209,209,1) 100%,rgba(254,254,254,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 68%,rgba(209,209,209,1) 100%,rgba(254,254,254,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 68%,rgba(209,209,209,1) 100%,rgba(254,254,254,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+
 }
 .goods li:first-child a{
     /*background: url(../img/plus.jpg) no-repeat;*/
@@ -153,10 +178,12 @@ body{
     margin-left: 11px;
 }
 
+.goods-select p{
+    padding-bottom: 1px;
+}
 #delivery .delivery-text {
     text-transform: uppercase;
     font-size: 13px;
-    /*display: inline;*/
 }
 .delivery-select{
     float: right;
@@ -172,19 +199,12 @@ body{
 }
 #delivery {
     clear: both;
-    /*float: left;*/
-    /*
-        border-top: 1px solid #808080;
-        margin-right: 15px;*/
-
-    /*margin-right: 20px;
-    border: 1px solid red;*/
 }
-
 
 .suggested-text {
     font-size: 12px;
     margin: 0px;
+    padding: 0px 0px 15px 0px;
 }
 #home{
     padding: 30px 0px;
@@ -196,27 +216,18 @@ body{
 #left-list{
     width: 25%;
     float: left;
-    /*display: block;*/
+    position: relative;
 }
 #right-list{
     margin-right: 10%;
     float: right;
     width: 52%;
-
-    /*margin-right: 10%;*/
-    /*padding-left: 28%;*/
-    /*float: right;*/
-}
-.suggested-text {
-    padding: 5px 0px 15px 0px;
-    /*margin-top: 10px;*/
+    display: block;
+    position: relative;
+    margin-bottom: 70px;
 }
 #suggested, #your-card, #delivery {
     margin: 15px 0px;
-    /*border-top: 1px solid #C0C0C0;*/
-    /*padding: 0px 0px;*/
-
-    /*border: 1px solid red;*/
 }
 #suggested #delivery {
     border-top: 1px solid #808080;
@@ -227,24 +238,24 @@ body{
 }
 table{
     border-collapse: collapse;
-/*    margin-right: 13%;*/
-    /*width: 72%;*/
 }
-#your-card-menu ul li{
-    /*display: inline;*/
-
-}
-
-
 
 #your-card-table{
     border: 1px solid #C0C0C0;
+    background: rgb(226,226,226); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(226,226,226,1) 0%, rgba(219,219,219,1) 68%, rgba(209,209,209,1) 100%, rgba(254,254,254,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(226,226,226,1)), color-stop(68%,rgba(219,219,219,1)), color-stop(100%,rgba(209,209,209,1)), color-stop(100%,rgba(254,254,254,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 68%,rgba(209,209,209,1) 100%,rgba(254,254,254,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 68%,rgba(209,209,209,1) 100%,rgba(254,254,254,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 68%,rgba(209,209,209,1) 100%,rgba(254,254,254,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 68%,rgba(209,209,209,1) 100%,rgba(254,254,254,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+
 }
 th {
     text-align: left;
     text-transform: uppercase;
     font-size: 13px;
-    /*background: #C0C0C0;*/
     color: #696969;
     padding: 5px;
 }
@@ -257,14 +268,6 @@ td{
     padding-top: 20px;
 }
 
-tr, .suggested-text{
-    /*padding-bottom: 20px;*/
-    /*border-top: 1px solid red;*/
-}
-.your-card-list h3, .your-card-list p{
-    /*border: 1px solid red;*/
-   /* display: inline;*/
-}
 .colorway {
     width: 180px;
 }
@@ -286,20 +289,15 @@ tr, .suggested-text{
 .your-card-subtotal{
     color: red;
     width: 13%;
-    /*padding: 0px 30px 0px 0px;*/
 }
 .qty {
     width: 35px;
     margin-right: 10px;
 }
-.your-card-list p{
-   /* width: 30%;*/
-}
+
 .division {
-    /*border: 1px solid black;*/
     background-color: #696969;
-    padding: 3px 6px;
-    /*margin-bottom: 20px;*/
+    padding: 2px 5px;
     color: white;
     text-transform: uppercase;
 }
@@ -313,8 +311,6 @@ span .division {
 .apply {
     position: relative;
     margin-top: 20px;
-    /*padding-bottom: 20px;*/
-    /* left: 25%;*/
 }
 .apply input {
     width: 250px;
@@ -328,15 +324,7 @@ span .division {
     position: relative;
     bottom: 10px;
 }
-/*#your-card #discount-table{
-    position: absolute;
 
-    top: 20px
-
-} */
-/*#discount-table dl{
-    margin-bottom: 50px;
-} */
 #discount-table dl dt{
     float: left;
     margin-right: 10px;
@@ -351,7 +339,7 @@ span .division {
     margin: 0;
 }
 #discount-table dl dd {
-    /*margin: 2px 0;*/
+
     padding: 5px 0;
     font-weight: bold;
 }
@@ -364,7 +352,16 @@ span .division {
     padding: 5px 10px;
 
     border-radius: 5px;
-    background: #C0C0C0;
+    /*background: #C0C0C0;*/
+    background: rgb(226,226,226); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(226,226,226,1) 0%, rgba(219,219,219,1) 68%, rgba(209,209,209,1) 100%, rgba(254,254,254,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(226,226,226,1)), color-stop(68%,rgba(219,219,219,1)), color-stop(100%,rgba(209,209,209,1)), color-stop(100%,rgba(254,254,254,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 68%,rgba(209,209,209,1) 100%,rgba(254,254,254,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 68%,rgba(209,209,209,1) 100%,rgba(254,254,254,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 68%,rgba(209,209,209,1) 100%,rgba(254,254,254,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(226,226,226,1) 0%,rgba(219,219,219,1) 68%,rgba(209,209,209,1) 100%,rgba(254,254,254,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+
 }
 .discount-text {
     display: inline;
@@ -379,40 +376,59 @@ span .division {
     padding: 5px 0px 5px 10px;
     border-radius: 10px 0 0 10px;
     text-transform: uppercase;
-    font-size: 11px;
-    margin-right: 25px;
+    font-size: 12px;
+    margin-right: 20px;
     background: #A9A9A9;
 }
 #btn-group ul {
-    padding-left: 30px;
-
+    padding-left: 15px;
 }
 #btn-group a {
     color: white;
 }
 #btn-group li:last-child{
     background: #FF00FF;
-
-
 }
 #btn-group img {
     margin-bottom: -8px;
 }
-
-
-
 #footer {
-    border: 1px solid red;
+
     height: 200px;
     width: 100%;
     clear: both;
-    background: #696969;
+    margin-top: 100px;
+    background: rgb(0,0,0); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,1) 13%, rgba(0,0,0,1) 20%, rgba(136,136,136,1) 46%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(13%,rgba(0,0,0,1)), color-stop(20%,rgba(0,0,0,1)), color-stop(46%,rgba(136,136,136,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 13%,rgba(0,0,0,1) 20%,rgba(136,136,136,1) 46%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,1) 13%,rgba(0,0,0,1) 20%,rgba(136,136,136,1) 46%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,1) 13%,rgba(0,0,0,1) 20%,rgba(136,136,136,1) 46%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,1) 13%,rgba(0,0,0,1) 20%,rgba(136,136,136,1) 46%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#888888',GradientType=0 ); /* IE6-9 */
+}
+#footer #footer-logo {
+    position: absolute;
+    margin-top: -10px;
+    background: #A9A9A9;
+    color: white;
+    text-transform: uppercase;
+}
+#footer-logo {
+    margin-left: 600px;
+    width: 160px;
+}
+#footer #footer-menu {
+    padding-left: 20%;
 }
 #footer dl {
     display: block;
     float: left;
     width: 15%;
-    padding: 15px 70px;
+    padding: 15px 60px;
+
+}
+#footer dl:first-child{
 
 }
 #footer dt {
@@ -422,6 +438,9 @@ span .division {
 #footer dd {
     margin: 0;
 }
+#footer dl:first-child{
+    margin-left: 12%;
+}
 #footer dl dt {
     text-transform: uppercase;
 }
@@ -430,18 +449,9 @@ span .division {
     font-size: 12px;
 }
 #footer a {
-    color: #C0C0C0;
+    color: white;
     border-bottom: 1px solid #C0C0C0;
 }
-/*#footer li:first-child{
-    text-transform: uppercase;
-    padding-left: 10px;
-    font-size: 15px;
-}
-#footer ul li{
-    font-size: 12px;
-}*/
-
 
 h4, h5 {
     text-transform: uppercase;
@@ -454,10 +464,6 @@ h4 {
 h5{
     padding: 0px;
     margin: 0px;
-}
-
-fieldset {
-    /*border: none;*/
 }
 a {
     text-decoration: none;

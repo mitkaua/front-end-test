@@ -20,27 +20,19 @@
             <div class="magento-menu"><a href="#">Blog</a></div>
         </div>
         <div id="my-account">
-            <!--<div class="my-assount-menu"><a href="#">My acoount</a></div>
-            <div id="my-assount-menu-nth2"><a href="#">Compare</a></div>
-            <div class="my-assount-menu"><a href="#">Shopping cart</a></div>-->
-            <ul>
-                <li><a href="#"><img src="img/my-account.jpg" />My acoount</a></li>
-                <li id="my-assount-menu-nth2"><a href="#"><img src="img/compare.jpg" />Compare</a></li>
-                <li><a href="#"><img src="img/catr.jpg" />Shopping Cart</a></li>
-            </ul>
+            <div class="my-assount-menu"><a href="#"><img src="img/my-account.jpg" />My acoount</a></div>
+            <div id="my-assount-menu-nth2"><a href="#"><img src="img/compare.jpg" />Compare</a></div>
+            <div class="my-assount-menu"><a href="#"><img src="img/catr.jpg" />Shopping cart</a></div>
         </div>
-        <div id="search"><img src="img/search.png" /></div>
+        <div id="search"></div>
         <div id="globe"></div>
         <!--<div id="home"><span>Home:: Shopping Cart</span></div>-->
     </div>
     <div id="home"><span>Home:: Shopping Cart</span></div>
-
-
     <div id="left-list">
         <span class="division">Suggested items</span>
         <div id="suggested">
             <div class="goods">
-
                 <form>
                     <p class="suggested-text">Based on your selection, you may be interested in the following items:</p>
                     <img src="img/layer123.jpg" />
@@ -51,7 +43,7 @@
                             <option value="c2"></option>
                             <option value="c3"></option>
                         </select></p>
-                        <label><span>QTY:</span><input type="text" name="qty"></label>
+                        <label><span>QTY:</span><input type="text" name="qty" value="1"></label>
                     </div>
                     <ul>
                         <li><a href="#" class="btn-plus">Add to cart</a></li>
@@ -60,18 +52,16 @@
                     </ul>
                 </form>
                 <form>
-                    <!--<fieldset>-->
-                        <img src="img/layer129.jpg" />
-                        <div class="goods-select">
-                            <h5>Crazy helmet</h5>
-                            <p>Color<select name="color">
-                                <option value="c1"></option>
-                                <option value="c2"></option>
-                                <option value="c3"></option>
-                            </select></p>
-                            <label><span>QTY:</span><input type="text" name="qty" class="qty"></label>
-                        </div>
-                    <!--</fieldset>-->
+                    <img src="img/layer129.jpg" />
+                    <div class="goods-select">
+                        <h5>Crazy helmet</h5>
+                        <p>Color<select name="color">
+                            <option value="c1"></option>
+                            <option value="c2"></option>
+                            <option value="c3"></option>
+                        </select></p>
+                        <label><span>QTY:</span><input type="text" name="qty" class="qty" value="1"></label>
+                    </div>
                     <ul>
                         <li><a href="#" class="btn-plus">Add to cart</a></li>
                         <li><a href="#">Add to wishlist</a></li>
@@ -83,25 +73,17 @@
         <span class="division">Delivery</span>
         <div id="delivery">
             <form>
-                    <p class="suggested-text">Enter your destination to get a shipping estimate</p>
-                    <!--<p>State<select name="state">
-                        <option value="st1"></option>
-                        <option value="st2"></option>
-                        <option value="st3"></option>
-                    </select></p>
-                    <p>Zip code<label><input type="text" name="zipcode"></label></p>-->
-                    <p class="delivery-text">State<select name="states" class="delivery-select">
-                        <option value="s1"></option>
-                        <option value="s2"></option>
-                        <option value="s3"></option>
-                    </select></p>
-                    <label><span class="delivery-text">Zip code</span><input type="text" name="zip" class="delivery-field"></label>
-                    <p><button type="submit" class="btn">Get a quote</button></p>
-
+                <p class="suggested-text">Enter your destination to get a shipping estimate</p>
+                <p class="delivery-text">State<select name="states" class="delivery-select">
+                    <option value="s1"></option>
+                    <option value="s2"></option>
+                    <option value="s3"></option>
+                </select></p>
+                <label><span class="delivery-text">Zip code</span><input type="text" name="zip" class="delivery-field"></label>
+                <p><button type="submit" class="btn">Get a quote</button></p>
             </form>
         </div>
     </div>
-
     <div id="right-list">
         <span class="division">Your Card</span>
         <div id="your-card">
@@ -124,7 +106,7 @@
                             <p><span>Color:</span> Gloss White, Tech Dash White/Persimmon 57; Ambetion.</p>
                         </td>
                         <td class="your-card-subtotal">$169.00</td>
-                        <td><label><input type="text" name="qty" class="qty"></label></td>
+                        <td><label><input type="text" name="qty" class="qty" value="1"></label></td>
                         <td class="your-card-subtotal">$169.00</td>
                     </tr>
                     <tr>
@@ -135,7 +117,7 @@
                             <p><span>Color:</span> Gloss White, Tech Dash White/Persimmon 57; Ambetion.</p>
                         </td>
                         <td class="your-card-subtotal">$169.00</td>
-                        <td><label><input type="text" name="qty" class="qty"></label></td>
+                        <td><label><input type="text" name="qty" class="qty" value="1"></label></td>
                         <td class="your-card-subtotal">$169.00</td>
                     </tr>
 
@@ -167,7 +149,6 @@
                 <label><input type="search" name="card"></label>
                 <button type="submit" class="btn">Apply card</button>
             </div>
-
         </div>
         <div id="btn-group">
             <ul>
@@ -175,16 +156,8 @@
                 <li><a href="#">Update shopping<img src="img/triangle-1.jpg" height="24" /></a></li>
                 <li><a href="#">Proceed to chekout<img src="img/triangle.jpg" height="24" /></a></li>
             </ul>
-
         </div>
-
-
-
     </div>
-
-
-
-
 </div>
 <div id="footer">
     <div id="footer-logo">Ecommercecraft</div>
@@ -212,7 +185,6 @@
         <dd><a href="#">Code reviews</a></dd>
         <dd><a href="#">Server optimization</a></dd>
     </dl>
-
 </div>
 </body>
 </html>
