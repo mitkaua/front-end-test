@@ -1,27 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
     <title>Test project</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-    <script src="http://malsup.github.io/jquery.cycle.all.js"></script>
+    <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="js/jquery.cycle.all.js" type="text/javascript"></script>
     <script src="js/file.js" type="text/javascript"></script>
-    <style>
-        html, body, #wrap { height: 100%; }
-        #wrap{
-            height: auto; min-height: 100%;
-        }
-        .main{
-            padding-bottom: 142px;
-        }
-        footer{
-            position: relative;
-            margin-top: -142px;
-            height: 142px;
-            clear:both;
-        }
-    </style>
 </head>
 <body>
 <div id="wrap">
@@ -37,11 +22,10 @@
         <div id="container">
             <div id="logo"></div>
             <nav>
-                <ul class="nav">
+                <ul id="ddmenu">
                     <li><a href="index.html">Home</a></li>
                     <li>
                         <a href="" class="mark">About GM</a>
-                        <i class="triangle"></i>
                         <ul class="sub-nav">
                             <li><a href="#">Team</a></li>
                             <li><a href="#">Events</a></li>
@@ -50,114 +34,60 @@
                         </ul>
                     </li>
                     <li><a href="#">Tournaments</a></li>
-                    <li><a href="#">Membership</a></li>
+                    <li><a href="membership.html">Membership</a></li>
                 </ul>
             </nav>
-            <div class="table">
+            <div class="tbl">
                 <h3>Membership Packages</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in dui diam, quis fringilla arcu. Nullam aliquam suscipit diam, aliquet pellentesque ligula commodo at. Praesent vehicula, quam eget hendrerit iaculis, nunc tellus accumsan augue, at sodales mi nisi ornare elit. Fusce convallis, felis vitae consectetur pulvinar, massa quam lobortis mi, eu facilisis lectus libero sit amet erat. Nullam a tellus libero, at cursus tortor. Sed sed leo sit amet ante tempus porttitor accumsan ut orci. Donec mi est, ornare ut fringilla vitae, lobortis vel sem. Sed vitae iaculis tortor. Morbi viverra lobortis turpis vel tristique.</p>
-                <div id="table">
-                <div class="column child-left">
-                    <div class="main-line main-left"><p>Package features</p></div>
-                    <div class="line child-left"><p>Monthly Meeting</p></div>
-                    <div class="line child-left"><p>Monthly Tournaments</p></div>
-                    <div class="line child-left"><p>Echipment</p></div>
-                    <div class="line child-left"><p>Custom Tournament</p></div>
-                    <div class="line child-left"><p>Online Profile</p></div>
-                    <div class="line child-left"><p>Team Access</p></div>
-                    <div class="line child-left"><p>Gifts</p></div>
-                    <div class="line bottom-line child-left"><img src="images/arrow.jpg" /></div>
-                </div>
-                <div class="column gold">
-                    <div class="main-line"><p>Silver Package $<span class="price">499</span><span class="mo">/mo</span></p></div>
-                    <div class="line"><p>1</p></div>
-                    <div class="line"><p>1</p></div>
-                    <div class="line"><p><span class="yes"></span></p></div>
-                    <div class="line"><p><span class="no"></span></p></div>
-                    <div class="line"><p><span class="no"></span></p></div>
-                    <div class="line"><p><span class="no"></span></p></div>
-                    <div class="line"><p><span class="no"></span></p></div>
-                    <div class="line bottom-line"><a href="#">SIGN UP</a></div>
-                </div>
-                <div class="column gold">
-                    <div class="main-line"><p>Golden Package $<span class="price">999</span><span class="mo">/mo</span></p></div>
-                    <div class="line"><p>2</p></div>
-                    <div class="line"><p>2</p></div>
-                    <div class="line"><p><span class="yes"></span></p></div>
-                    <div class="line"><p><span class="no"></span></p></div>
-                    <div class="line"><p><span class="yes"></span></p></div>
-                    <div class="line"><p><span class="no"></span></p></div>
-                    <div class="line"><p><span class="yes"></span></p></div>
-                    <div class="line bottom-line"><a href="#">SIGN UP</a></div>
-                </div>
-                <div class="column gold">
-                    <div class="main-line"><p>Premium Package $<span class="price">1999</span><span class="mo">/mo</span></p></div>
-                    <div class="line"><p>Unlimited</p></div>
-                    <div class="line"><p>Unlimited</p></div>
-                    <div class="line"><p><span class="yes"></span></p></div>
-                    <div class="line"><p><span class="yes"></span></p></div>
-                    <div class="line"><p><span class="yes"></span></p></div>
-                    <div class="line"><p><span class="yes"></span></p></div>
-                    <div class="line"><p><span class="yes"></span></p></div>
-                    <div class="line bottom-line"><a href="#">SIGN UP</a></div>
+                <div id="tbl">
+                    <div class="column child-left">
+                        <div class="main-line main-left"><p>Package features</p></div>
+                        <div class="line child-left"><p>Monthly Meeting</p></div>
+                        <div class="line child-left"><p>Monthly Tournaments</p></div>
+                        <div class="line child-left"><p>Echipment</p></div>
+                        <div class="line child-left"><p>Custom Tournament</p></div>
+                        <div class="line child-left"><p>Online Profile</p></div>
+                        <div class="line child-left"><p>Team Access</p></div>
+                        <div class="line child-left"><p>Gifts</p></div>
+                        <div class="line bottom-line child-left"><img src="images/arrow.jpg" /></div>
+                    </div>
+                    <div class="column gold tbl-info-left">
+                        <div class="main-line"><p>Silver Package $<span class="price">499</span><span class="mo">/mo</span></p></div>
+                        <div class="line"><p>1</p></div>
+                        <div class="line"><p>1</p></div>
+                        <div class="line"><p><span class="yes"></span></p></div>
+                        <div class="line"><p><span class="no"></span></p></div>
+                        <div class="line"><p><span class="no"></span></p></div>
+                        <div class="line"><p><span class="no"></span></p></div>
+                        <div class="line"><p><span class="no"></span></p></div>
+                        <div class="line bottom-line"><a href="#">SIGN UP</a></div>
+                    </div>
+                    <div class="column gold">
+                        <div class="main-line"><p>Golden Package $<span class="price">999</span><span class="mo">/mo</span></p></div>
+                        <div class="line"><p>2</p></div>
+                        <div class="line"><p>2</p></div>
+                        <div class="line"><p><span class="yes"></span></p></div>
+                        <div class="line"><p><span class="no"></span></p></div>
+                        <div class="line"><p><span class="yes"></span></p></div>
+                        <div class="line"><p><span class="no"></span></p></div>
+                        <div class="line"><p><span class="yes"></span></p></div>
+                        <div class="line bottom-line"><a href="#">SIGN UP</a></div>
+                    </div>
+                    <div class="column gold tbl-info-right">
+                        <div class="main-line"><p>Premium Package $<span class="price">1999</span><span class="mo">/mo</span></p></div>
+                        <div class="line"><p>Unlimited</p></div>
+                        <div class="line"><p>Unlimited</p></div>
+                        <div class="line"><p><span class="yes"></span></p></div>
+                        <div class="line"><p><span class="yes"></span></p></div>
+                        <div class="line"><p><span class="yes"></span></p></div>
+                        <div class="line"><p><span class="yes"></span></p></div>
+                        <div class="line"><p><span class="yes"></span></p></div>
+                        <div class="line bottom-line"><a href="#">SIGN UP</a></div>
+                    </div>
                 </div>
             </div>
-            </div>
-
-    <!--<div class="inform">
-        <h3>Membership Packages</h3>
-        <p>this text</p>
-        <div id="table">
-            <dl>
-                <dt>Package features</dt>
-                <dd>Monthly Meeting</dd>
-                <dd>Monthly Tournaments</dd>
-                <dd>Echipment</dd>
-                <dd>Custom Tournament</dd>
-                <dd>Online Profile</dd>
-                <dd>Team Access</dd>
-                <dd>Gifts</dd>
-                <dd></dd>
-            </dl>
-            <dl>
-                <dt>Silver Package $499/mo</dt>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-            </dl>
-            <dl>
-                <dt>Golden Package $999/mo</dt>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-            </dl>
-            <dl>
-                <dt>Premium Package $1999/mo</dt>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-                <dd></dd>
-            </dl>
         </div>
-    </div>
-</div>-->
-            </div>
-
-
     </div>
 </div>
 <footer>
