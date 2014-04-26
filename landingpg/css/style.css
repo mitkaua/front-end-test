@@ -1,0 +1,251 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    /*color: #8B4513;*/
+}
+/*@font-face {
+    font-family: 'robotoregular';
+    src: url('../files/roboto/Roboto-Regular-webfont.eot');
+    src: url('../files/roboto/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../files/roboto/Roboto-Regular-webfont.woff') format('woff'),
+    url('../files/roboto/Roboto-Regular-webfont.ttf') format('truetype'),
+    url('../files/roboto/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
+#contacts, #block-video, .page {
+    font-family: Calibri, sans-serif;
+    color: #52220e;
+}
+#contacts {
+    /*border: 1px solid red;*/
+    /*background-color: #9ACD32;*/
+    background: url("../img/poloska.jpg") repeat-x;
+    /*padding: 5px 0;*/
+    margin-bottom: 35px;
+    height: 60px;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 1px 3px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 1px 3px 0px rgba(50, 50, 50, 0.5);
+
+}
+#contacts p {
+    text-align: center;
+    font-weight: normal;
+    font-size: 18px;
+    color: #ffffff;
+    padding-top: 3px;
+}
+
+#logo1 {
+    float: left;
+    background: url("../img/logo_header.png") no-repeat;
+    margin-top: 5px;
+    width: 112px;
+    height: 50px;    
+}
+#logo2 {
+    position: relative;
+    float: right;
+    background: url("../img/logo-fitness.png") no-repeat;
+
+    width: 135px;
+    height: 60px;
+}
+#contacts #telephone{
+    font-size: 24px;
+    font-weight: bolder;
+}
+.page {
+    max-width: 960px;
+    min-width: 940px;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+}
+#main, #block-video, #reviews {
+    text-align: center;
+}
+#main h1+span {
+    font-size: 30px;
+}
+span.bold {
+    font-weight: bolder;
+    /*font-size: 20px;*/
+}
+.uptext {
+    text-transform: uppercase;
+}
+.line {
+    border-bottom: 5px solid #ffc600;
+}
+#main {
+    /*border: 1px solid cadetblue;*/
+    background: url("../img/fitnes.png") no-repeat;
+    background-position: center 160px;
+    height: 550px;
+}
+#main h1, h3 {
+    text-align: center;
+    font-weight: normal;
+}
+#main h3 {
+    font-size: 24px;
+    margin: 24px 0 60px 0;
+}
+/*#main h3:after {
+    display: block;
+    content: '';
+    background-image: url("../img/line.png");
+    /*background-repeat: no-repeat;*/
+  /*  background-position: 100%;
+    /*float: right;*/
+    /*clear: both;*/
+  /*  width: 155px;
+    height: 98px;
+    z-index: -1;
+    position: relative;
+}   */
+.nav {
+    /*clear: right;*/
+    position: relative;
+    float: left;
+    /*border: 1px solid black;*/
+    /*width: 300px;*/
+    /*height: 100px;*/
+}
+.nav p {
+    background: #9ACD32;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    padding: 2px 7px;
+    margin-bottom: 10px;
+}
+.nav li {
+    list-style-type: none;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 2px 0 2px 0px;
+}
+.nav li:before {
+    content: '';
+    background: url("../img/kubik_malenkiy.png") no-repeat;
+    /*background-position: left;*/
+    float: left;
+    display: block;
+    position: relative;
+    z-index: -1;
+    width: 7px;
+    height: 7px;
+    margin-top: 8px;
+    padding-right: 10px;
+}
+/*#img-bg{
+    background: url("../img/fitnes.png") no-repeat;
+    height: 450px;
+}*/
+.sendform {
+    position: relative;
+    /*left: 400px;*/
+    /*clear: left;*/
+    float: right;
+    clear: right;
+    /*top: 0;*/
+    /*border: 1px solid black;*/
+    width: 290px;
+    background: #9ACD32;
+    /*height: 200px;*/
+}
+#main #img-bg{
+    content: '';
+    display: block;
+    position: relative;
+    /*left: 100%;*/
+    float: right;
+    clear: none;
+    background: url("../img/line.png") no-repeat;
+    /*background-position: 100%;*/
+    width: 155px;
+    height: 98px;
+    margin: -120px 120px 0 0;
+    /*z-index: -1;*/
+}
+.sendform p {
+    font-size: 20px;
+    color: #52220e;
+    padding: 15px 15px 10px 15px;
+}
+.sendform input {
+    margin: 5px 10px;
+    padding: 5px 0 5px 10px;
+    width: 240px;
+    font-size: 18px;
+
+}
+
+#block-video {
+    /*border: 1px solid rosybrown;*/
+    background: #a6ce39;
+    background-image: url("../img/sports-symbols-md2.png");
+}
+#block-video h3, p {
+    font-weight: normal;
+    color: #333333;
+}
+#block-video h3 {
+    font-size: 38px;
+    padding: 25px 0;
+}
+#block-video p{
+    font-size: 20px;
+    padding: 20px 0;
+}
+#reviews {
+    background-color: #FDF5E6;
+
+    /*display: inline-flex;*/
+}
+#reviews h2 {
+    padding: 30px 0;
+    font-size: 32px;
+    font-weight: normal;
+}
+#users {
+    border: 1px solid red;
+}
+.user {
+    display: inline-flex;
+    width: 300px;
+    height: 350px;
+    margin: 0 7px 30px 7px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 1px 8px rgba(0,0,0,.7);
+    -moz-box-shadow: 0 1px 8px rgba(0,0,0,.7);
+    box-shadow: 0 1px 8px rgba(0,0,0,.7);
+}
+
+.btn {
+    background: #ffc600;
+    border: 1px solid #ffc600;
+    width: 220px;
+    padding: 10px 0px;
+    margin: 15px 0 17px 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+    box-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+#footer {
+    /*background: url("../img/poloska.jpg") repeat-x;*/
+    background: #a6ce39;
+    background-image: url("../img/logo_footer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px;
+}
