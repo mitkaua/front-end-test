@@ -64,10 +64,10 @@ body {
     margin: 0 auto;
     /*border: 1px solid red;*/
 }
-#main, #block-video, #reviews {
+#chief, #block-video, #reviews {
     text-align: center;
 }
-#main h1+span {
+#chief h1+span {
     font-size: 30px;
 }
 span.bold {
@@ -80,17 +80,17 @@ span.bold {
 .line {
     border-bottom: 5px solid #ffc600;
 }
-#main {
+#chief {
     /*border: 1px solid cadetblue;*/
     background: url("../img/fitnes.png") no-repeat;
     background-position: center 160px;
-    height: 550px;
+    height: 650px;
 }
-#main h1, h3 {
+#chief h1, h3 {
     text-align: center;
     font-weight: normal;
 }
-#main h3 {
+#chief h3 {
     font-size: 24px;
     margin: 24px 0 60px 0;
 }
@@ -159,7 +159,7 @@ span.bold {
     background: #9ACD32;
     /*height: 200px;*/
 }
-#main #img-bg{
+#chief #img-bg{
     content: '';
     display: block;
     position: relative;
@@ -183,13 +183,13 @@ span.bold {
     padding: 5px 0 5px 10px;
     width: 240px;
     font-size: 18px;
-
 }
 
 #block-video {
     /*border: 1px solid rosybrown;*/
     background: #a6ce39;
     background-image: url("../img/sports-symbols-md2.png");
+    padding-bottom: 15px;
 }
 #block-video h3, p {
     font-weight: normal;
@@ -205,19 +205,24 @@ span.bold {
 }
 #reviews {
     background-color: #FDF5E6;
+    border: 1px solid yellowgreen;
+    /*height: 650px;*/
+
 
     /*display: inline-flex;*/
 }
+
 #reviews h2 {
-    padding: 30px 0;
+    padding: 30px 0 120px 0;
     font-size: 32px;
     font-weight: normal;
 }
 #users {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 .user {
     display: inline-flex;
+    position: relative;
     width: 300px;
     height: 350px;
     margin: 0 7px 30px 7px;
@@ -226,7 +231,96 @@ span.bold {
     -moz-box-shadow: 0 1px 8px rgba(0,0,0,.7);
     box-shadow: 0 1px 8px rgba(0,0,0,.7);
 }
+#user-photo1, #user-photo2, #user-photo3 {
+    position: relative;
+    height: 180px;
+    width: 180px;
+    top: -90px;
+    left: 21%;
+    display: block;
+    /*margin: 0 auto;*/
+    /*margin:-85px 0 0 85px;*/
+    /*padding: 0 0 0 0;*/
+    /*color: white;*/
+    /*text-align: center;*/
+    /*line-height: 160px;*/
 
+    /*закругленные углы и тень*/
+    border: 1px solid #FDF5E6;
+    -webkit-border-radius: 180px;
+    -moz-border-radius: 180px;
+    border-radius: 180px;
+    /*border-radius: 50%;*/
+
+    /*-webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    -moz-box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);*/
+    /*-webkit-box-shadow: 6px 6px 8px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    6px 6px 8px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         6px 6px 8px 0px rgba(50, 50, 50, 0.75);*/
+
+    /*-webkit-box-shadow: 0px 1px 8px 0px rgba(50, 50, 50, 0.7);
+    -moz-box-shadow:    0px 1px 8px 0px rgba(50, 50, 50, 0.7);
+    box-shadow:         0px 1px 8px 0px rgba(50, 50, 50, 0.7);*/
+    /*background: #FDF5E6;*/
+    background: #ffffff;
+    z-index: 1;
+
+}
+.user #user-photo1:before, .user #user-photo2:before, .user #user-photo3:before {
+    content: '';
+    display: block;
+    /*margin: 80px 0 0 0 -80px;*/
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+    /*position: absolute;*/
+    /*top: -80px;
+    left: 50%;*/
+    border-radius: 50%;
+    background: #ffffff;
+    -webkit-box-shadow: 6px 6px 8px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    6px 6px 8px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         6px 6px 8px 0px rgba(50, 50, 50, 0.75);
+    /*-webkit-box-shadow: 0px 1px 20px 0px rgba(50, 50, 50, 0.8);
+    -moz-box-shadow:    0px 1px 20px 0px rgba(50, 50, 50, 0.8);
+    box-shadow:         0px 1px 20px 0px rgba(50, 50, 50, 0.8);*/
+    z-index: 1;
+}
+.user h4 {
+    display: block;
+    /*margin: 100px 0 0 0;*/
+    margin: 100px 0 0 -140px;
+
+    /*text-align: center;*/
+}
+.user h4:before {
+    content: '';
+    background: url("../img/kubik_commens.png") no-repeat;
+    /*background-position: left;*/
+    float: left;
+    display: block;
+    position: relative;
+    /*z-index: -1;*/
+    width: 11px;
+    height: 11px;
+    margin-top: 4px;
+    padding-right: 9px;
+}
+.user p {
+    position: absolute;
+    display: block;
+    /*width: 100px;
+    height: 100px;*/
+    /*border: 1px solid red;*/
+    top: 110px;
+    left: 0;
+    margin: 20px 10px;
+    float: left;
+    text-align: left;
+
+    /*bottom: 180px;*/
+}
 .btn {
     background: #ffc600;
     border: 1px solid #ffc600;
@@ -241,7 +335,7 @@ span.bold {
     -moz-box-shadow: 0 1px 3px rgba(0,0,0,.5);
     box-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
-#footer {
+#bottom {
     /*background: url("../img/poloska.jpg") repeat-x;*/
     background: #a6ce39;
     background-image: url("../img/logo_footer.png");
