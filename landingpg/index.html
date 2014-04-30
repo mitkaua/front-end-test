@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="css/style.css">
-    <!--<link rel="stylesheet" href="css/onepage-scroll.css">
-    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
-    <script type="text/javascript" src="js/jquery.onepage-scroll.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".main").onepage_scroll();
-        });
-    </script>-->
+    <link rel="stylesheet" media="all" href="css/style.css">
+    <link rel="stylesheet" media="all" href="css/sendbox.css">
+    <link rel="stylesheet" media="all" href="js/sendbox/jquery.fancybox.css">
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/sendbox/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
 <div class="main">
@@ -43,9 +39,9 @@
                 <div class="sendform">
                     <p>Для получения спецпредложения оставьте <span class="bold">Ваши контактные данные</span></p>
                     <form>
-                        <input type="text" name="name" placeholder="Имя">
-                        <input type="tel" name="telephone" placeholder="Телефон">
-                        <input type="email" name="email" placeholder="E-mail">
+                        <div class="input"><input type="text" name="name" placeholder="Имя"></div>
+                        <div class="input"><input type="tel" name="telephone" placeholder="Телефон"></div>
+                        <div class="input"><input type="email" name="email" placeholder="E-mail"></div>
                         <button class="btn" type="submit">Отправить</button>
                     </form>
                 </div>
@@ -55,10 +51,19 @@
     <section>
         <div id="block-video">
             <h3><span class="uptext">Мы обменяем карту любого фитнес клуба</span></h3>
-                <!--<p>ТУТ ВИДЕО</p>-->
             <iframe width="640" height="360" src="//www.youtube.com/embed/DZLOPqJEW9k" frameborder="0" allowfullscreen></iframe>
             <p class="promo">c <span class="bold">1</span> по <span class="bold">31 мая</span> мы обмениваем карту любого фитнес клуба </br>на <span class="bold">Wellness Park</span></p>
-            <button class="btn">Обменять</button>
+            <p class="wrapper"><a class="modalbox uptext btn" href="#inline">обменять</a></p>
+            <div id="inline">
+                <h2>Отправка сообщения</h2>
+                <p>Для получения спецпредложения оставьте <span class="bold">Ваши контактные данные</span></p>
+                <form>
+                    <div class="input"><input type="text" name="name" placeholder="Имя"></div>
+                    <div class="input"><input type="tel" name="telephone" placeholder="Телефон"></div>
+                    <div class="input"><input type="email" name="email" placeholder="E-mail"></div>
+                    <button class="btn" type="submit">Отправить</button>
+                </form>
+            </div>
         </div>
     </section>
     <section>
@@ -68,28 +73,27 @@
                     <h2><span class="line uptext">Отзывы наших клиентов</span></h2>
                     <div class="user">
                         <div id="user-photo1"></div>
-                        <h4>Пупкин Пупкин</h4>
-                        <p>Когда фотокамера Lytro вышла 2,5 года назад, люди не знали, что вот так просто, с помощью маленькой коробочки-камеры, можно переделать 2-D фотографию в 3-D.</p>
+                        <h4>Волколупова Елена</h4>
+                        <p>Я хожу в спортзал Wellness Park из-за процесса. Мой результат - хорошее настроение! Тем более что с тренером Гантимуровым Романом по-другому быть не может. Возьмите за правило заниматься ежедневно!</p>
                     </div>
                     <div class="user">
                         <div id="user-photo2"></div>
-                        <h4>Пупкин</h4>
-                        <p>Апрель 2014: Lytro выпускает свой ​​второй продукт, Lytro Illum. Это уже не такая интересная коробочка внешне, её дизайн близок к классическому, но каковы характеристики этой более крупной и технологически продвинутой модели!</p>
+                        <h4>Косолапов Андрей</h4>
+                        <p>Wellness Park для меня – это хорошая команда тренеров, современная инфраструктура, спортивное оборудование. Я хожу в тренажерный зал к Евсикову Владимиру. Результатами наших тренировок я удовлетворен. Если нет фитнес опыта, рекомендую заниматься с персональным тренером. Всем успехов!</p>
                     </div>
                     <div class="user">
                         <div id="user-photo3"></div>
-                        <h4>Пупкин</h4>
-                        <p>Апрель 2014: Lytro выпускает свой ​​второй продукт, Lytro Illum. Это уже не такая интересная коробочка внешне, её дизайн близок к классическому, но каковы характеристики этой более крупной и технологически продвинутой модели!</p>
+                        <h4>Коротков Станислав</h4>
+                        <p>За все время занятия фитнесом я не помню и не видел зал такого высокого уровня, с большим арсеналом спортивного инвентаря, услуг тренерского состава. Очень хорошая работа сервисной службы, а главное, рецепции. Я занимаюсь в  тренажерном зале, зале бокса. Недавно по рекомендации врача посетил пилатес, тренировку вела Романова Ольга, и мне очень понравилось, я рекомендую эту программу всем, кто занимается и не занимается спортом, это настоящее здоровье.</br>
+                            Придя в клуб, я прошел фитнес-тест, где я увидел, над чем мне нужно поработать, получил рекомендации по питанию и когда я через год взял сантиметр, то я увидел положительный результат.</p>
                     </div>
                  </div>
             </div>
         </div>
-        <div id="bottom"></div>
     </section>
-    <!--<footer>-->
-
-    <!--</footer>-->
 </div>
-
+<footer>
+    <div id="bottom"></div>
+</footer>
 </body>
 </html>

@@ -2,9 +2,7 @@
     padding: 0;
     margin: 0;
 }
-body {
-    /*color: #8B4513;*/
-}
+
 /*@font-face {
     font-family: 'robotoregular';
     src: url('../files/roboto/Roboto-Regular-webfont.eot');
@@ -20,25 +18,20 @@ body {
     color: #52220e;
 }
 #contacts {
-    /*border: 1px solid red;*/
-    /*background-color: #9ACD32;*/
     background: url("../img/poloska.jpg") repeat-x;
-    /*padding: 5px 0;*/
     margin-bottom: 35px;
     height: 60px;
     -webkit-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.5);
     -moz-box-shadow:    0px 1px 3px 0px rgba(50, 50, 50, 0.5);
     box-shadow:         0px 1px 3px 0px rgba(50, 50, 50, 0.5);
-
 }
 #contacts p {
     text-align: center;
     font-weight: normal;
     font-size: 18px;
     color: #ffffff;
-    padding-top: 3px;
+    padding-top: 2px;
 }
-
 #logo1 {
     float: left;
     background: url("../img/logo_header.png") no-repeat;
@@ -50,7 +43,6 @@ body {
     position: relative;
     float: right;
     background: url("../img/logo-fitness.png") no-repeat;
-
     width: 135px;
     height: 60px;
 }
@@ -62,7 +54,6 @@ body {
     max-width: 960px;
     min-width: 940px;
     margin: 0 auto;
-    /*border: 1px solid red;*/
 }
 #chief, #block-video, #reviews {
     text-align: center;
@@ -72,7 +63,6 @@ body {
 }
 span.bold {
     font-weight: bolder;
-    /*font-size: 20px;*/
 }
 .uptext {
     text-transform: uppercase;
@@ -81,10 +71,9 @@ span.bold {
     border-bottom: 5px solid #ffc600;
 }
 #chief {
-    /*border: 1px solid cadetblue;*/
     background: url("../img/fitnes.png") no-repeat;
     background-position: center 160px;
-    height: 650px;
+    height: 600px;
 }
 #chief h1, h3 {
     text-align: center;
@@ -94,33 +83,16 @@ span.bold {
     font-size: 24px;
     margin: 24px 0 60px 0;
 }
-/*#main h3:after {
-    display: block;
-    content: '';
-    background-image: url("../img/line.png");
-    /*background-repeat: no-repeat;*/
-  /*  background-position: 100%;
-    /*float: right;*/
-    /*clear: both;*/
-  /*  width: 155px;
-    height: 98px;
-    z-index: -1;
-    position: relative;
-}   */
 .nav {
-    /*clear: right;*/
     position: relative;
     float: left;
-    /*border: 1px solid black;*/
-    /*width: 300px;*/
-    /*height: 100px;*/
 }
 .nav p {
-    background: #9ACD32;
+    background: #a6ce39;
     font-size: 18px;
-    font-weight: bolder;
+    font-weight: bold;
     color: white;
-    padding: 2px 7px;
+    padding: 1px 7px;
     margin-bottom: 10px;
 }
 .nav li {
@@ -133,7 +105,6 @@ span.bold {
 .nav li:before {
     content: '';
     background: url("../img/kubik_malenkiy.png") no-repeat;
-    /*background-position: left;*/
     float: left;
     display: block;
     position: relative;
@@ -143,50 +114,59 @@ span.bold {
     margin-top: 8px;
     padding-right: 10px;
 }
-/*#img-bg{
-    background: url("../img/fitnes.png") no-repeat;
-    height: 450px;
-}*/
 .sendform {
     position: relative;
-    /*left: 400px;*/
-    /*clear: left;*/
     float: right;
     clear: right;
-    /*top: 0;*/
-    /*border: 1px solid black;*/
     width: 290px;
-    background: #9ACD32;
-    /*height: 200px;*/
+    background: #a6ce39;
 }
 #chief #img-bg{
     content: '';
     display: block;
     position: relative;
-    /*left: 100%;*/
     float: right;
     clear: none;
     background: url("../img/line.png") no-repeat;
-    /*background-position: 100%;*/
     width: 155px;
     height: 98px;
     margin: -120px 120px 0 0;
-    /*z-index: -1;*/
 }
 .sendform p {
     font-size: 20px;
     color: #52220e;
     padding: 15px 15px 10px 15px;
 }
-.sendform input {
-    margin: 5px 10px;
-    padding: 5px 0 5px 10px;
+.input {
+    position:relative;
+    display: block;
+    background:#fff;
+    margin: 10px 22px;
+    padding: 0 0 0 0;
     width: 240px;
     font-size: 18px;
+    border-radius:4px;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-border-radius:4px;
 }
-
+.input:before{
+    content: "";
+    position: absolute;
+    background: url("../img/shadow.png")no-repeat;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -10px;
+    width: 70px;
+    height: 10px;
+}
+.sendform input {
+    height: 32px;
+    width: 220px;
+    padding: 0 10px;
+}
 #block-video {
-    /*border: 1px solid rosybrown;*/
     background: #a6ce39;
     background-image: url("../img/sports-symbols-md2.png");
     padding-bottom: 15px;
@@ -204,21 +184,28 @@ span.bold {
     padding: 20px 0;
 }
 #reviews {
-    background-color: #FDF5E6;
-    border: 1px solid yellowgreen;
-    /*height: 650px;*/
-
-
-    /*display: inline-flex;*/
+    background-color: #faf7f1;
+    border: 1px solid #a6ce39;
 }
-
 #reviews h2 {
     padding: 30px 0 120px 0;
     font-size: 32px;
     font-weight: normal;
 }
-#users {
-    /*border: 1px solid red;*/
+.wrapper a {
+    text-decoration: none;
+    color: #ffffff;
+    background: #ffc600;
+    border: 1px solid #ffc600;
+    width: 220px;
+    padding: 10px 35px;
+    margin: 15px 0 17px 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bolder;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+    box-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 .user {
     display: inline-flex;
@@ -238,20 +225,10 @@ span.bold {
     top: -90px;
     left: 21%;
     display: block;
-    /*margin: 0 auto;*/
-    /*margin:-85px 0 0 85px;*/
-    /*padding: 0 0 0 0;*/
-    /*color: white;*/
-    /*text-align: center;*/
-    /*line-height: 160px;*/
-
-    /*закругленные углы и тень*/
     border: 1px solid #FDF5E6;
     -webkit-border-radius: 180px;
     -moz-border-radius: 180px;
     border-radius: 180px;
-    /*border-radius: 50%;*/
-
     /*-webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
     -moz-box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
     box-shadow: 2px 2px 4px rgba(0,0,0,0.4);*/
@@ -270,38 +247,34 @@ span.bold {
 .user #user-photo1:before, .user #user-photo2:before, .user #user-photo3:before {
     content: '';
     display: block;
-    /*margin: 80px 0 0 0 -80px;*/
     width: 160px;
     height: 160px;
     margin: 10px;
-    /*position: absolute;*/
-    /*top: -80px;
-    left: 50%;*/
     border-radius: 50%;
     background: #ffffff;
-    -webkit-box-shadow: 6px 6px 8px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    6px 6px 8px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         6px 6px 8px 0px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: 0px 6px 8px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 6px 8px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 6px 8px 0px rgba(50, 50, 50, 0.75);
     /*-webkit-box-shadow: 0px 1px 20px 0px rgba(50, 50, 50, 0.8);
     -moz-box-shadow:    0px 1px 20px 0px rgba(50, 50, 50, 0.8);
     box-shadow:         0px 1px 20px 0px rgba(50, 50, 50, 0.8);*/
     z-index: 1;
 }
 .user h4 {
+    position: inherit;
     display: block;
-    /*margin: 100px 0 0 0;*/
-    margin: 100px 0 0 -140px;
-
-    /*text-align: center;*/
+    top: 100px;
+    margin-left: -120px;
+    /*margin: 100px 0 0 -140px;*/
+    font-size: 14px;
+    /*border: 1px solid red;*/
 }
 .user h4:before {
     content: '';
     background: url("../img/kubik_commens.png") no-repeat;
-    /*background-position: left;*/
     float: left;
     display: block;
     position: relative;
-    /*z-index: -1;*/
     width: 11px;
     height: 11px;
     margin-top: 4px;
@@ -310,22 +283,30 @@ span.bold {
 .user p {
     position: absolute;
     display: block;
-    /*width: 100px;
-    height: 100px;*/
-    /*border: 1px solid red;*/
     top: 110px;
     left: 0;
     margin: 20px 10px;
     float: left;
+    font-size: 14px;
     text-align: left;
-
-    /*bottom: 180px;*/
+    font-style: italic;
+    color: #52220e;
+    padding: 0 5px;
+    /*position: ;
+    display:inline;
+    top: 110px;
+    left: 0;
+    /*margin: 20px 10px;
+    float: left;*/
+    /*font-size: 14px;
+    text-align: left;
+    font-style: italic;*/
 }
 .btn {
     background: #ffc600;
     border: 1px solid #ffc600;
     width: 220px;
-    padding: 10px 0px;
+    padding: 10px 0;
     margin: 15px 0 17px 0;
     text-transform: uppercase;
     font-size: 18px;
@@ -335,8 +316,10 @@ span.bold {
     -moz-box-shadow: 0 1px 3px rgba(0,0,0,.5);
     box-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
+.btn:hover{
+    background: #ffd02b;
+}
 #bottom {
-    /*background: url("../img/poloska.jpg") repeat-x;*/
     background: #a6ce39;
     background-image: url("../img/logo_footer.png");
     background-repeat: no-repeat;
