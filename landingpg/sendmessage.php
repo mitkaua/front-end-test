@@ -14,7 +14,7 @@ $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
 $msg  = "<html><body style='font-family:Arial,sans-serif;'>";
 $msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Новое сообщение</h2>\r\n";
 $msg .= "<p><strong>Имя отрпавителя:</strong>".$name."</p>\r\n";
-$msg .= "<p><strong>Телефон отправителя:</strong>".tel."</p>\r\n";
+$msg .= "<p><strong>Телефон отправителя:</strong>".$tel."</p>\r\n";
 $msg .= "<p><strong>Почта отправителя:</strong> ".$usermail."</p>\r\n";
 //$msg .= "<p><strong>Сообщение:</strong> ".$content."</p>\r\n";
 $msg .= "</body></html>";

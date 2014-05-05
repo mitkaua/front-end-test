@@ -2,17 +2,6 @@
     padding: 0;
     margin: 0;
 }
-
-/*@font-face {
-    font-family: 'robotoregular';
-    src: url('../files/roboto/Roboto-Regular-webfont.eot');
-    src: url('../files/roboto/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../files/roboto/Roboto-Regular-webfont.woff') format('woff'),
-    url('../files/roboto/Roboto-Regular-webfont.ttf') format('truetype'),
-    url('../files/roboto/Roboto-Regular-webfont.svg#robotoregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}*/
 #contacts, #block-video, .page {
     font-family: Calibri, sans-serif;
     color: #52220e;
@@ -58,8 +47,8 @@
 #chief, #block-video, #reviews {
     text-align: center;
 }
-#chief h1+span {
-    font-size: 30px;
+#chief h1+span, #chief>h1 {
+    font-size: 36px;
 }
 span.bold {
     font-weight: bolder;
@@ -111,14 +100,15 @@ span.bold {
     z-index: -1;
     width: 7px;
     height: 7px;
-    margin-top: 8px;
+    margin-top: 11px;
     padding-right: 10px;
 }
 .sendform {
     position: relative;
     float: right;
     clear: right;
-    width: 290px;
+    width: 280px;
+    height: 315px;
     background: #a6ce39;
 }
 #chief #img-bg{
@@ -133,29 +123,23 @@ span.bold {
     margin: -120px 120px 0 0;
 }
 .sendform p {
-    font-size: 20px;
+    font-size: 19px;
     color: #52220e;
     padding: 15px 15px 10px 15px;
 }
 .input {
     position:relative;
     display: block;
-    background:#fff;
-    margin: 10px 22px;
-    padding: 0 0 0 0;
-    width: 240px;
+    margin: 10px 18px;
+    width: 190px;
     font-size: 18px;
     border-radius:4px;
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    -moz-border-radius:4px;
 }
 .input:before{
     content: "";
     position: absolute;
     background: url("../img/shadow.png")no-repeat;
-    left: 0;
+    left: 2px;
     bottom: 0;
     margin-bottom: -10px;
     width: 70px;
@@ -165,6 +149,12 @@ span.bold {
     height: 32px;
     width: 220px;
     padding: 0 10px;
+    background: #f6faec;
+    border: 1px solid #f6faec;
+    font-family: Calibri, sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    color: #907d71;
 }
 #block-video {
     background: #a6ce39;
@@ -185,10 +175,10 @@ span.bold {
 }
 #reviews {
     background-color: #faf7f1;
-    border: 1px solid #a6ce39;
+    /*border: 1px solid #a6ce39;*/
 }
 #reviews h2 {
-    padding: 30px 0 120px 0;
+    padding: 30px 0 50px 0;
     font-size: 32px;
     font-weight: normal;
 }
@@ -197,7 +187,7 @@ span.bold {
     color: #ffffff;
     background: #ffc600;
     border: 1px solid #ffc600;
-    width: 220px;
+    width: 170px;
     padding: 10px 35px;
     margin: 15px 0 17px 0;
     text-transform: uppercase;
@@ -208,11 +198,11 @@ span.bold {
     box-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 .user {
-    display: inline-flex;
+    display: inline-block;
     position: relative;
     width: 300px;
     height: 350px;
-    margin: 0 7px 30px 7px;
+    margin: 70px 7px 30px 7px;
     background-color: #ffffff;
     -webkit-box-shadow: 0 1px 8px rgba(0,0,0,.7);
     -moz-box-shadow: 0 1px 8px rgba(0,0,0,.7);
@@ -229,20 +219,8 @@ span.bold {
     -webkit-border-radius: 180px;
     -moz-border-radius: 180px;
     border-radius: 180px;
-    /*-webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-    -moz-box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);*/
-    /*-webkit-box-shadow: 6px 6px 8px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    6px 6px 8px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         6px 6px 8px 0px rgba(50, 50, 50, 0.75);*/
-
-    /*-webkit-box-shadow: 0px 1px 8px 0px rgba(50, 50, 50, 0.7);
-    -moz-box-shadow:    0px 1px 8px 0px rgba(50, 50, 50, 0.7);
-    box-shadow:         0px 1px 8px 0px rgba(50, 50, 50, 0.7);*/
-    /*background: #FDF5E6;*/
     background: #ffffff;
     z-index: 1;
-
 }
 .user #user-photo1:before, .user #user-photo2:before, .user #user-photo3:before {
     content: '';
@@ -251,23 +229,26 @@ span.bold {
     height: 160px;
     margin: 10px;
     border-radius: 50%;
-    background: #ffffff;
+    border: 2px solid white;
     -webkit-box-shadow: 0px 6px 8px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    0px 6px 8px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         0px 6px 8px 0px rgba(50, 50, 50, 0.75);
-    /*-webkit-box-shadow: 0px 1px 20px 0px rgba(50, 50, 50, 0.8);
-    -moz-box-shadow:    0px 1px 20px 0px rgba(50, 50, 50, 0.8);
-    box-shadow:         0px 1px 20px 0px rgba(50, 50, 50, 0.8);*/
     z-index: 1;
+}
+#user-photo1:before{
+    background: url("../img/user-1.png") no-repeat;
+}
+#user-photo2:before{
+    background: url("../img/user-2.png") no-repeat;
+}
+#user-photo3:before{
+    background: url("../img/user-3.png") no-repeat;
 }
 .user h4 {
     position: inherit;
     display: block;
-    top: 100px;
-    margin-left: -120px;
-    /*margin: 100px 0 0 -140px;*/
+    top: -77px;
     font-size: 14px;
-    /*border: 1px solid red;*/
 }
 .user h4:before {
     content: '';
@@ -277,8 +258,11 @@ span.bold {
     position: relative;
     width: 11px;
     height: 11px;
-    margin-top: 4px;
-    padding-right: 9px;
+    left: 80px;
+    margin-top: 3px;
+
+    /*margin: 3px 20px 0 0;*/
+    padding-right: 14px;
 }
 .user p {
     position: absolute;
@@ -292,24 +276,15 @@ span.bold {
     font-style: italic;
     color: #52220e;
     padding: 0 5px;
-    /*position: ;
-    display:inline;
-    top: 110px;
-    left: 0;
-    /*margin: 20px 10px;
-    float: left;*/
-    /*font-size: 14px;
-    text-align: left;
-    font-style: italic;*/
 }
 .btn {
     background: #ffc600;
     border: 1px solid #ffc600;
-    width: 220px;
+    width: 170px;
     padding: 10px 0;
-    margin: 15px 0 17px 0;
+    margin: 10px 0 17px 0;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bolder;
     color: white;
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.5);
