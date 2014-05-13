@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="ru">
 <head>
     <meta charset="utf-8">
     <title>Akciya</title>
     <link rel="stylesheet" media="all" href="css/style.css">
-    <link rel="stylesheet" media="all" href="css/sendbox.css">
-    <link rel="stylesheet" media="all" href="js/sendbox/jquery.fancybox.css">
-    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" src="js/sendbox/jquery.fancybox.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/sendbox.css">
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+            $('#button').click(function(){
+                $('#popup').show('fast');
+                $('#hover').show();
+                return false;
+            });
+            $('#hover').click(function(){
+                $('#popup').hide('fast');
+                $('#hover').hide();
+                return false;
+            });
+        });
+    </script>
 </head>
 <body>
 <div class="main">
@@ -38,11 +49,11 @@
                 <div id="img-bg"></div>
                 <div class="sendform">
                     <p>Для получения спецпредложения оставьте <span class="bold"></br>Ваши контактные данные</span></p>
-                    <form>
+                    <form method="post" action="post.php">
                         <div class="input"><input type="text" name="name" placeholder="Имя"></div>
-                        <div class="input"><input type="tel" name="telephone" placeholder="Телефон"></div>
+                        <div class="input"><input type="tel" name="tel" placeholder="Телефон"></div>
                         <div class="input"><input type="email" name="email" placeholder="E-mail"></div>
-                        <button class="btn" type="submit">Отправить</button>
+                        <button class="btn" type="submit" name="button">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -53,17 +64,17 @@
             <h3><span class="uptext">Мы обменяем карту любого фитнес клуба</span></h3>
             <iframe width="640" height="360" src="//www.youtube.com/embed/DZLOPqJEW9k" frameborder="0" allowfullscreen></iframe>
             <p class="promo">c <span class="bold">1</span> по <span class="bold">31 мая</span> мы обмениваем карту любого фитнес клуба </br>на <span class="bold">Wellness Park</span></p>
-            <p class="wrapper"><a class="modalbox uptext btn" href="#inline">обменять</a></p>
-            <div id="inline">
-                <h2>Отправка сообщения</h2>
-                <p>Для получения спецпредложения оставьте <span class="bold">Ваши контактные данные</span></p>
-                <form>
-                    <div class="input"><input type="text" name="name" placeholder="Имя"></div>
-                    <div class="input"><input type="tel" name="telephone" placeholder="Телефон"></div>
-                    <div class="input"><input type="email" name="email" placeholder="E-mail"></div>
-                    <button class="btn" type="submit">Отправить</button>
-                </form>
-            </div>
+            <p class="wrapper"><a id="button" class="uptext btn" href="#popup">обменять</a></p>
+        </div>
+        <div id="popup">
+            <h2>Отправка сообщения</h2>
+            <p>Для получения спецпредложения оставьте <span class="bold">Ваши контактные данные</span></p>
+            <form method="post" action="post.php">
+                <div class="input"><input type="text" name="name" placeholder="Имя"></div>
+                <div class="input"><input type="tel" name="tel" placeholder="Телефон"></div>
+                <div class="input"><input type="email" name="email" placeholder="E-mail"></div>
+                <button class="btn" type="submit" name="button">Отправить</button>
+            </form>
         </div>
     </section>
     <section>
@@ -91,6 +102,8 @@
         </div>
     </section>
 </div>
+
+<div id="hover"></div>
 <footer>
     <div id="bottom"></div>
 </footer>
